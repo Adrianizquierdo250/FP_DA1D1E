@@ -1,0 +1,181 @@
+<DOCTYPE html>
+<html lang=es>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <link rel="stylesheet" type="text/css" href="estilosformulario.css">
+    <body background="https://www.psolera.com/images/stories/virtuemart/product/azul.png" style="background-repeat: no-repeat; background-position: center center;">
+ 
+    <form action="mailto:direcciondelcorreo@correo.com">
+      
+<fieldset style="border: 2px solid rgb(0, 0, 0); width: 10px; background-color: rgb(253, 253, 253) ; ">
+  <h1 style="color:rgb(3, 8, 14)" align="center"> <font face="impact">CURRICULUM</font></h1>
+  <hr width=400 size=2 align="center" color="#000000">
+<table border="2.5"  style="border-collapse:collapse" bordercolor="#111111" width="400" >  
+<ul  align="center" style="list-style-type:circle" text-align="center">
+    <th> <h1 style="color:rgb(3, 8, 14)" align="center"> <font face="impact">DATOS PERSONALES</font></h1>
+      <hr width=400 size=2 align="center" color="#610B0B"></th>
+
+    <tr><td><li >Nombre: <input type="text" size="15" maxlength="30" name="Nombre" placeholder="Nombre" required/></td></li></tr>
+    <br>
+     <tr><td><li>Primer apellido: <input type="text" size="15" maxlength="30" name="Primer apellido" placeholder="Primer Apellido" required></li></tr></td>
+    <br>    
+    <tr><td><li><s>Segundo apellido:</s> <input type="text" size="15" maxlength="30"  name="Segundo apellido" placeholder="Segundo Apellido"></li></tr></td>
+    <br> 
+    <tr><td>  <li>Telefono: <input type="number" size="15" maxlength="30" name="Telefono" placeholder="Telefono" required></li>
+    <br>    
+    <tr><td> <li>Correo: <input type="mail" size="15" maxlength="30" name="Correo electronico" placeholder="Correo Electronico" required></li></td></tr>
+    <br>
+    <tr><td> <span class="contraseña" data-descr="Escribe la contraseña">Contraseña:<input type="password" name="contraseña"  ></span> </tr></td>
+    <tr><td> <div id="Titulo"> <span class="titulo" data-descr="Selecciona una titulacion">
+      ¿Titulación?<input type="checkbox" name="Título" value="1" >Bachiller 
+        <input type="checkbox" name="Título" value="1" >Grado Medio
+        <input type="checkbox" name="Título" value="1" >Grado Superior
+        <input type="checkbox" name="Título" value="1" >Titulo Universitario 
+        <input type="checkbox" name="Título" value="1" >Otros
+      </span> 
+    </div></td></tr>
+   
+    <br>
+
+    <tr><td>  <li> <span class="edad" data-descr="Pon una edad entre 18 y 60">Edad: <input type="number" size="15" maxlength="30" name="Edad" placeholder="Edad" min="18" max="60" required></span></td></tr>
+    <tr><td>Fecha de nacimiento: <input type="date" size="15" maxlength="30" value="Nacimiento" name="Fecha de nacimiento" min="1/1/2001" max="1/1/1959" ></td></tr>
+      <tr><td> Sexo: <input type="radio" name="Sexo" value="1" required>Masculino
+          <input type="radio" name="Sexo" value="1" required>Femenino </td></tr>
+          <br>
+        </table>
+        <br>
+        <br>
+  <li>Provincia<select placeholder="Provincia" id="Comunidad">
+	<option disabled="disabled" selected="selected">Provincia</option>   
+   <optgroup label="Comunidad de Madrid">
+      <option>Alcorcón</option>
+      <option>Getafe</option>
+      <option>Leganes</option>
+      <option>Alcala de henares</option>
+    </optgroup>
+        <optgroup label="Cataluña">
+        <option>Girona</option>
+      <option>Tarragona</option>
+      <option>Barcelona</option>
+      <option>Lérida</option>
+        </optgroup>
+
+        <optgroup label="Comunidad Valenciana">
+        <option>Alicante</option>
+      <option>Valencia</option>
+        </optgroup>
+
+        <optgroup label="Andalucía"> 
+        <option>Cádiz</option>
+        <option>Malaga</option>
+        <option>Huelva</option>
+        <option>Granada</option>
+        <option>Jaen</option>
+        <option>Almeria</option>
+        <option>Sevilla</option>
+        <option>Crodoba</option>
+        </optgroup>
+
+        <optgroup label="Murcia"> 
+        <option>Murcia</option>
+        </optgroup>
+
+        <optgroup label="Islas Balerares"> 
+        <option>Mallorca</option>
+        <option>Ibiza</option>
+        <option>Formentera</option>
+        </optgroup>
+
+        <optgroup label="Islas Canarias"> 
+         <option>Santa Cruz de tenerife</option>
+        <option> Las Palmas</option>
+        </optgroup>
+
+        <optgroup label="Galicia"> 
+        <option>Vigo</option>
+        <option>Lugo</option>
+        <option>A Coruña</option>
+        <option>Orense</option>
+        </optgroup>
+
+        <optgroup label="Cantabria"> 
+         <option>Cantabria</option> 
+        </optgroup>
+
+        <optgroup label="Asturias">
+        <option>Oviedo</option>
+        </optgroup>
+
+        <optgroup label="Aragon"> 
+        <option>Zaragoza</option>
+         <option>Huesca</option>
+        <option>Teruel</option>
+        </optgroup>
+
+        <optgroup label="Pais Vasco"> 
+        <option>Bilbao</option>
+       <option>Vizcaia</option>
+        <option>Vitoria</option>
+        </optgroup>
+
+        <optgroup label="Castilla la Mancha"> 
+        <option>Guadalajara</option>
+        <option>Toledo</option>
+        <option>Ciudad Real</option>
+        <option>Albacete</option>
+        </optgroup>
+
+        <optgroup label="Castilla Leon"> 
+        <option>Valladolid</option>
+        <option>León</option>
+        <option>Salamanca</option>
+        <option>Zamora</option>
+        <option>Burgos</option>
+        <option>Soria</option>
+        <option>Palencia</option>
+        </optgroup>
+
+        <optgroup label="Extremadura"> 
+         <option>Badajoz</option>
+         <option>Caceres</option>
+         </optgroup>
+
+        <optgroup label="La Rioja"> 
+        </optgroup>
+        <optgroup label="Ceuta"> 
+        </optgroup>
+        <optgroup label="Melilla"> 
+        </optgroup>
+    </select> 
+    </li>   
+<br>
+
+<a href="https://www.google.es/" target="_blank">Google</a>
+<a href="menu.html">Menú principal</a>
+
+
+
+  <br> 
+  <br>
+  <br>
+</form>
+</ul>
+
+<input type=reset value="Borrar" name="reset"> 
+  <input type="submit" value="Enviar">
+<br>
+<br>
+  <progress></progress>
+</fieldset >  
+<textarea name="textarea" rows="15" cols="60" placeholder="Escribe un comentario" maxlength="50" id="comentario"></textarea>
+<textarea name="textarea" rows="15" cols="52" id="anotacion">En este formulario los campos obligatorios son Nombre, Primer Apellido, Correo.
+  La Edad debe estar en un valor entre el 18 y el 60  º
+</textarea>
+
+    
+ 
+    </body>
+</html>
+
+

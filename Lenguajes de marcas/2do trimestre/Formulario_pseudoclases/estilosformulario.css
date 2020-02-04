@@ -1,0 +1,168 @@
+body{
+    align-items: center;
+    text-align: center;
+}
+
+table{
+    margin-top:-85;
+  }
+
+input:required{
+    size:"15" ;
+    max-lines:"30";
+    border: 2px solid black;
+}
+
+input:optional{
+  size:"15" ;
+  max-lines:"30";
+  border: 2px solid black;
+  color: rgb(25, 212, 212) ;
+}
+
+input:invalid {
+    background-color: red;
+    color: black;
+  }
+  
+  input:valid {
+    background-color: green;
+    color: black;
+  }
+  fieldset{
+      margin: auto;
+      text-align: center;
+  }
+  input:out-of-range {
+    background-color: red;
+    color: black;
+  }
+  
+  input:in-range {
+    background-color: green;
+    color: black;
+  }
+  input :checked{
+      color: salmon;
+  }
+
+
+  textarea#comentario  {
+    margin-left: 225px;
+    margin-top: -490;
+    position: fixed;
+}
+textarea#anotacion  {
+    margin-left: -667px;
+    margin-top: -490;
+    position: fixed;
+}
+
+textarea#anotacion :read-only{
+  cursor: not-allowed;
+}
+
+textarea:hover{
+    color: black;
+    background-color: cornflowerblue ;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+
+}
+
+a:visited{
+    color: blueviolet;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:link{
+    color: black;
+    font-style: italic;
+}
+
+progress {
+    margin: 4px;
+  }
+  
+  progress:indeterminate {
+    opacity: 0.5;
+    background-color: rgb(19, 228, 19);
+    box-shadow: 0 0 2px 1px red;
+  }
+
+  span {
+    cursor: pointer;
+    position:relative;
+   }
+   
+   
+   span.mate::before {
+       display: none;
+       content: attr(data-descr);
+       color: white;
+       background-color: red;
+       position: absolute; 
+       opacity:0.8;
+       border-radius: 5px;
+   
+   }
+   
+   span.contraseña::before {
+       display: none;
+       content: attr(data-descr);
+       color: white;
+       background-color: black;
+       position: absolute; 
+       opacity:0.8;
+       border-radius: 5px;
+       margin-left: 250px;
+       margin-top: 3px;
+       width: 150px;
+      }
+       
+   
+   
+   span.edad::before {
+    display: none;
+    content: attr(data-descr);
+    color: rgb(241, 8, 8);
+    background-color: black;
+    position: absolute; 
+    opacity:0.8;
+    border-radius: 5px;
+    border-color: aliceblue;
+    width: 225px ;
+    margin-top: -20px;
+    margin-left: 150px;
+  }
+    
+span.titulo::before {
+  display: none;
+  content: attr(data-descr);
+  color: rgb(6, 151, 248);
+  background-color: black;
+  position: absolute; 
+  opacity:0.8;
+  border-radius: 5px;
+  margin-left: 210px;
+  margin-top: 20px;
+  width: 225px;
+}
+
+   
+   
+   span.ci::before {
+       display: none;
+       content: attr(data-descr);
+       color: white;
+       background-color: blue;
+       position: absolute; 
+       opacity:0.8;
+       border-radius: 5px;
+   
+   }
+   
+   span:hover::before {
+       display: block;
+   }
